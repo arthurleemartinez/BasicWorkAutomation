@@ -12,10 +12,8 @@ POST_LOGIN_URL = 'https://www5.elawsoftware.com/eLawSecure.nsf/SecureLogin?ReadF
 REQUEST_URL = 'https://www5.elawsoftware.com/1217/1217_Criminal.nsf/Docket?OpenForm'
 
 values = {'username': 'Leonard.martinez',
-          'password': '51698'}
+          'password': '516980'}
 
 r = requests.post(POST_LOGIN_URL, data=values)
 print(r.content)
 webbrowser.get(chrome_path).open(REQUEST_URL)
-
-
